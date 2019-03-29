@@ -1,0 +1,23 @@
+package com.ga.eventboard.utilities;
+
+/**
+ *
+ * @author Raghavi,Neha
+ */
+public class StopWatch {
+
+	private final long start;
+
+	/**
+	 * Initializes a new stopwatch.
+	 */
+	public StopWatch() {
+		start = System.currentTimeMillis();
+	}
+
+	public double elapsedTime() {
+		long now = System.currentTimeMillis();
+		return (now - start) / 1000.0;
+	}
+
+}
